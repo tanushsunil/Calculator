@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="styles.css" rel="stylesheet"></link>
+
+</head>
+<body>
+    <div class="calculator-grid">
+    <div class="output-screen">
+        <div data-previous-operand class="previous-operand">
+            <p id="previous-op"></p>
+        </div>
+        <div data-current-operand class="current-operand">
+            <h1 id="current-h1">
+            </h1>
+        </div>
+    </div>
+    <button data-operation onclick="operator('/')">÷</button>
+    <button data-delete>DEL</button>
+    <button data-all-clear class="two-unit" onclick="AC()">AC</button>
+    <button data-operation onclick="operator('*')">x</button>
+    <button data-number onclick="display_op('1')">1</button>
+    <button data-number onclick="display_op('2')">2</button>
+    <button data-number onclick="display_op('3')">3</button>
+    <button data-operation onclick="operator('-')">-</button>
+    <button data-number onclick="display_op('4')">4</button>
+    <button data-number onclick="display_op('5')">5</button>
+    <button data-number onclick="display_op('6')">6</button>
+    <button data-operation onclick="operator('+')">+</button>
+    <button data-number onclick="display_op('7')">7</button>
+    <button data-number onclick="display_op('8')">8</button>
+    <button data-number onclick="display_op('9')">9</button>
+    <button data-equal class="two-unit" onclick="compute()">=</button>
+    <button data-number onclick="display_op('0')">0</button>
+    <button data-number>.</button>
+</div>
+    
+</body>
+<script src="script.js"></script>
+</html>
