@@ -20,7 +20,7 @@
         </div>
     </div>
     <button data-operation onclick="operator('/')">÷</button>
-    <button data-delete>DEL</button>
+    <button data-delete onclick="Clear()">DEL</button>
     <button data-all-clear class="two-unit" onclick="AC()">AC</button>
     <button data-operation onclick="operator('*')">x</button>
     <button data-number onclick="display_op('1')">1</button>
@@ -36,7 +36,7 @@
     <button data-number onclick="display_op('9')">9</button>
     <button data-equal class="two-unit" onclick="compute()">=</button>
     <button data-number onclick="display_op('0')">0</button>
-    <button data-number>.</button>
+    <button data-number id="bottom-corner">.</button>
 </div>
     
 </body>
